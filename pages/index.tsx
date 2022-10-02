@@ -16,9 +16,6 @@ const Home: NextPage<Props> = (props) => {
     </Layout >
   )
 }
-
-export default Home
-
 //we pass the data in build time
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const res = await pokemonApi.get<PokemonList>('pokemon?limit=151');
