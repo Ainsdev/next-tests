@@ -17,7 +17,7 @@ const Home: NextPage<Props> = (props) => {
   )
 }
 //we pass the data in build time
-export const getStaticProps: GetStaticProps = async (ctx) => {
+const getStaticProps: GetStaticProps = async (ctx) => {
   const res = await pokemonApi.get<PokemonList>('pokemon?limit=151');
   const pokemons = res.data.results;
   const listPokemons = pokemons.map((pokemon: PokemonSmall, index) => {
