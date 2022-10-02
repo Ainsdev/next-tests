@@ -3,8 +3,6 @@ import { Layout } from '../components/layouts/Layuot';
 import { pokemonApi } from '../apis';
 import { GetStaticProps } from 'next'
 import PokemonSmall, { PokemonList } from '../interfaces/pokemon-interfaces';
-import PokemonCard from '../components/pokemonUI/PokemonCard';
-import { Grid } from '@nextui-org/react';
 import Pokemon from './pokemon/pokemon';
 
 interface Props {
